@@ -17,4 +17,5 @@ int main()
     printf("\nMultiplication is %d * %d = %d",N1,N2,mul);
     printf("\nDivisible of %d / %d = %d",N1,N2,div);
     printf("\nmod of %d / %d = %d\n",N1,N2,mod);
+    return 0;
 }
