@@ -1,0 +1,31 @@
+// Write a C program that accepts four integers and finds the maximum of three.
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int I1 , I2 , I3 , I4 , max1 , max2 , max3 ;
+
+    printf("\n");
+ 
+    printf(" Enter first Integer value ");
+    scanf("%d",&I1);
+    printf(" Enter second Integer value ");
+    scanf("%d",&I2);
+    printf(" Enter thirds Integer value ");
+    scanf("%d",&I3);
+    printf(" Enter fourth Integer value ");
+    scanf("%d",&I4);
+
+
+    max1 = (I1 + I2 + abs(I1 - I2) ) / 2;
+    max2 = (I3 + I4 + abs(I3 - I4) ) / 2;
+    max3 = (max1 + max2 + abs(max1 - max2)) / 2;
+
+    printf("\n");
+    printf("Maximum1 %d \n",max1);
+    printf("Maximum2 %d \n",max2);
+    printf("Maximum value of fourth integer  %d\n",max3);
+    printf("\n");
+    return 0;
+}
